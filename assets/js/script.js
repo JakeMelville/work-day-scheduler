@@ -1,22 +1,20 @@
 console.log("yo");
 
-var date = document.getElementById("#current-date")
-
 function liveTime () {
     var currentDay = moment().format("dddd, MMMM Do, YYYY");
     $("#current-date").text(currentDay);
 }
 liveTime();
 
-console.log(currentDay);
 
 
-    //check for button clicks inside an on-click
+//check for button clicks inside an on-click
     
     $(".saveBtn").on("click", function () {
         //grab my values for time and text
-    // var time = 
-    // var text =
+   
+        var time = moment().format("hh:mm A");
+        var text = $(".textInput").val();
     
         //save them to local storage
     
