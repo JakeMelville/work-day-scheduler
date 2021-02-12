@@ -1,4 +1,8 @@
 console.log("yo");
+var today = new Date();
+var currentTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+console.log(currentTime);
+
 
 function liveTime () {
     var currentDay = moment().format("dddd, MMMM Do, YYYY");
@@ -24,7 +28,13 @@ liveTime();
     
     //write a function to update the hours in the time blocks 
     //grey was passed, red is current, green is future 
-    
+   
+   
+
+   console.log($("hour"))
+
+
+
     //using moment we need to get the current time 
     
     //loop over the timeblocks- **hint** look up .each 
