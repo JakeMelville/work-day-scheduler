@@ -45,9 +45,6 @@ $(".saveBtn").on("click", function () {
 //write a function to update the hours in the time blocks 
 //grey was passed, red is current, green is future 
 
-//    function plannerColor() {
-//        if (currentTime)
-//    }
 
 function colorChange() {
 
@@ -74,10 +71,39 @@ function colorChange() {
         fourEl.classList.add("green");
         fiveEl.classList.add("green");
     }
+
+    if (currentTime < 10 && currentTime > 8) {
+        nineEl.classList.add("red");
+    }
+    else if (currentTime < 11 && currentTime > 9) {
+        tenEl.classList.add("red")
+    }
+    else if (currentTime < 12 && currentTime > 10) {
+        elevenEl.classList.add("red")
+    }
+    else if (currentTime < 13 && currentTime > 11) {
+        twelveEl.classList.add("red")
+    }
+    else if (currentTime < 14 && currentTime > 12) {
+        oneEl.classList.add("red")
+    }
+    else if (currentTime < 15 && currentTime > 13) {
+        twoEl.classList.add("red")
+    }
+    else if (currentTime < 16 && currentTime > 14) {
+        threeEl.classList.add("red")
+    }
+    else if (currentTime < 17 && currentTime > 15) {
+        fourEl.classList.add("red")
+    }
+    else if (currentTime < 18 && currentTime > 16) {
+        fiveEl.classList.add("red")
+    }
 }
+
 colorChange();
 console.log($("hour"))
-console.log(textInput.getAttribute("background"));
+
 
 
 //using moment we need to get the current time 
