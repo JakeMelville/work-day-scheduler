@@ -2,7 +2,7 @@ var today = new Date();
 var currentTime = today.getHours();
 var textInput = document.querySelector(".textInput");
 var nineEl = document.querySelector(".nine");
-var tenEl = document.querySelector(".ten"); 
+var tenEl = document.querySelector(".ten");
 var elevenEl = document.querySelector(".eleven");
 var twelveEl = document.querySelector(".twelve");
 var oneEl = document.querySelector(".one");
@@ -15,9 +15,7 @@ var fiveEl = document.querySelector(".five");
 
 
 
-
-
-console.log(currentTime);
+console.log(textInput);
 
 
 function liveTime() {
@@ -29,17 +27,77 @@ liveTime();
 
 
 //check for button clicks inside an on-click
-
 $(".saveBtn").on("click", function () {
-    //grab my values for time and text
 
-    var time = moment().format("hh:mm A");
-    var text = $(".textInput").val();
+    var time = "9am";
+    var text = $(".nine").val();
 
-    //save them to local storage
-
-    localStorage.setItem(time, text) //pass in the 2 variables for time and text
+    localStorage.setItem(time, text)
 });
+$(".saveBtn").on("click", function () {
+
+    var time = "10am";
+    var text = $(".ten").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "11am";
+    var text = $(".eleven").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "12pm";
+    var text = $(".twelve").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "1pm";
+    var text = $(".one").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "2pm";
+    var text = $(".two").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "3pm";
+    var text = $(".three").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "4pm";
+    var text = $(".four").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "5pm";
+    var text = $(".five").val();
+
+    localStorage.setItem(time, text)
+});
+$(".saveBtn").on("click", function () {
+
+    var time = "9am";
+    var text = $(".nine").val();
+
+    localStorage.setItem(time, text)
+});
+
 
 
 //write a function to update the hours in the time blocks 
@@ -105,36 +163,9 @@ colorChange();
 console.log($("hour"))
 
 
-
-//using moment we need to get the current time 
-
-//loop over the timeblocks- **hint** look up .each 
-
-
-//check to see if we have moved past the current time
-//if 
-//addClass- .past       addClass("past")<-- how it should look
-
-
-
-//check to see if it is the current time
-//else if 
-//removeClass ,past
-//addClass .present
-
-
-
-//check to see if it time is future 
-//esle
-//removeClass .past
-//removeClass .present
-//addClass .future
-
-
-
-
 //load any saved data from local storage 
-$("#hour-9 .task").val(localStorage.getItem("hour-9"))
+// $("#hour-9 .task").val(localStorage.getItem("hour-9"))
+// $("#")
 
 
 
@@ -146,14 +177,11 @@ $("#hour-9 .task").val(localStorage.getItem("hour-9"))
 
 
 
+//     $(".saveBtn").on("click", function () {
 
+//         var time = moment().format("hh:mm A");
+//         var text = $(".textInput").val();
 
-    // + ":" + today.getMinutes() + ":" + today.getSeconds()
-
-
-
-
-
-
-
+//     localStorage.setItem(time, text) //pass in the 2 variables for time and text
+// });
 
