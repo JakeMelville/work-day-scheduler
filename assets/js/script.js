@@ -5,6 +5,8 @@ var currentTime = today.getHours();
 
 
 
+
+
 //global variables used to access html elements
 var textInput = document.querySelector(".textInput");
 var nineEl = document.querySelector(".nine");
