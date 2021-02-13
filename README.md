@@ -15,4 +15,4 @@ Everything in my code works- however I believe if I included a couple loops my c
 
 ## How to Use
 
-Input information into the textbox and clock the save button. All information will be saved in local storage. 
+Input information into the textbox and click the save button. All information will be saved in local storage. 

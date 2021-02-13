@@ -1,7 +1,9 @@
 
-//variables to get the current time only in hours
+// variables to get the current time only in hours
 var today = new Date();
 var currentTime = today.getHours();
+
+
 
 //global variables used to access html elements
 var textInput = document.querySelector(".textInput");
