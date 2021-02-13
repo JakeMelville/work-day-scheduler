@@ -113,28 +113,37 @@ $(".saveBtn").on("click", function () {
 
 function colorChange() {
 
-    if (currentTime > 17) {
-        nineEl.classList.add("grey");
-        tenEl.classList.add("grey");
-        elevenEl.classList.add("grey");
-        twelveEl.classList.add("grey");
-        oneEl.classList.add("grey");
-        twoEl.classList.add("grey");
-        threeEl.classList.add("grey");
-        fourEl.classList.add("grey");
-        fiveEl.classList.add("grey");
-    }
+    // if (currentTime > 17) {
+    //     nineEl.classList.add("grey");
+    //     tenEl.classList.add("grey");
+    //     elevenEl.classList.add("grey");
+    //     twelveEl.classList.add("grey");
+    //     oneEl.classList.add("grey");
+    //     twoEl.classList.add("grey");
+    //     threeEl.classList.add("grey");
+    //     fourEl.classList.add("grey");
+    //     fiveEl.classList.add("grey");
+    // }
 
     if (currentTime < 9) {
         nineEl.classList.add("green");
+        nineEl.classList.remove("nine")
         tenEl.classList.add("green");
+        tenEl.classList.remove("ten");
         elevenEl.classList.add("green");
+        elevenEl.classList.remove("eleven");
         twelveEl.classList.add("green");
+        twelveEl.classList.remove("twelve");
         oneEl.classList.add("green");
+        oneEl.classList.remove("one");
         twoEl.classList.add("green");
+        twoEl.classList.remove("two");
         threeEl.classList.add("green");
+        threeEl.classList.remove("three");
         fourEl.classList.add("green");
+        fourEl.classList.remove("four");
         fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
 
 //if else statment checking the time- depending on the time the text box will get a color
@@ -177,22 +186,58 @@ function colorChange() {
         fiveEl.classList.remove("five");
     }
     else if (currentTime < 13 && currentTime > 11) {
-        twelveEl.classList.add("red")
+        twelveEl.classList.add("red");
+        twelveEl.classList.remove("twelve");
+        oneEl.classList.add("green");
+        oneEl.classList.remove("one");
+        twoEl.classList.add("green");
+        twoEl.classList.remove("two");
+        threeEl.classList.add("green");
+        threeEl.classList.remove("three");
+        fourEl.classList.add("green");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
     else if (currentTime < 14 && currentTime > 12) {
-        oneEl.classList.add("red")
+        oneEl.classList.add("red");
+        oneEl.classList.remove("one");
+        twoEl.classList.add("green");
+        twoEl.classList.remove("two");
+        threeEl.classList.add("green");
+        threeEl.classList.remove("three");
+        fourEl.classList.add("green");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
     else if (currentTime < 15 && currentTime > 13) {
-        twoEl.classList.add("red")
+        twoEl.classList.add("red");
+        twoEl.classList.remove("two");
+        threeEl.classList.add("green");
+        threeEl.classList.remove("three");
+        fourEl.classList.add("green");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
     else if (currentTime < 16 && currentTime > 14) {
-        threeEl.classList.add("red")
+        threeEl.classList.add("red");
+        threeEl.classList.remove("three");
+        fourEl.classList.add("green");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
     else if (currentTime < 17 && currentTime > 15) {
-        fourEl.classList.add("red")
+        fourEl.classList.add("red");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
     else if (currentTime < 18 && currentTime > 16) {
-        fiveEl.classList.add("red")
+        fiveEl.classList.add("red");
+        fiveEl.classList.remove("five");
     }
 }
 
