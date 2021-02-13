@@ -14,6 +14,7 @@
 </head>
 
 <body>
+ 
     <header class="jumbotron row justify-content-center">
         <h1 class="display-3 col-12">Work Day Scheduler</h1>
         <p class="lead col-12">A simple calendar app for scheduling your work day</p>
@@ -21,6 +22,8 @@
         <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+           <!-- added individual classes for each hour- in each class there is a textarea, and a button -->
+           <!-- used bootstrap to style each class -->
         <div class="col-1 hour">9am</div>
         <textArea class="col-10 textInput nine"></textArea>
         <button class="col-1 saveBtn btn"><i class="fas fa-save"></i></button>
@@ -57,7 +60,7 @@
         <textArea class="col-10 textInput five"></textArea>
         <button class="col-1 saveBtn btn"><i class="fas fa-save"></i></button>
     </div>
-
+<!-- scripts for jquery and moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>

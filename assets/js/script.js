@@ -1,5 +1,9 @@
+
+//variables to get the current time only in hours
 var today = new Date();
 var currentTime = today.getHours();
+
+//global variables used to access html elements
 var textInput = document.querySelector(".textInput");
 var nineEl = document.querySelector(".nine");
 var tenEl = document.querySelector(".ten");
@@ -15,9 +19,9 @@ var fiveEl = document.querySelector(".five");
 
 
 
-console.log(textInput);
+// console.log(textInput);
 
-
+//this function sets the date at top of the page
 function liveTime() {
     var currentDay = moment().format("dddd, MMMM Do, YYYY");
     $("#current-date").text(currentDay);
@@ -27,6 +31,7 @@ liveTime();
 
 
 //check for button clicks inside an on-click
+//everytime the save button is clicked the data will be stored in local storage
 $(".saveBtn").on("click", function () {
 
     var time = "9am";
@@ -100,8 +105,10 @@ $(".saveBtn").on("click", function () {
 
 
 
-//write a function to update the hours in the time blocks 
+
 //grey was passed, red is current, green is future 
+//added if statements- if it is after 5pm all boxes go grey, if its before 9am all boxes will be green
+
 
 
 function colorChange() {
@@ -130,6 +137,7 @@ function colorChange() {
         fiveEl.classList.add("green");
     }
 
+//if else statment checking the time- depending on the time the text box will get a color
     if (currentTime < 10 && currentTime > 8) {
         nineEl.classList.add("red");
     }
@@ -161,27 +169,3 @@ function colorChange() {
 
 colorChange();
 console.log($("hour"))
-
-
-//load any saved data from local storage 
-// $("#hour-9 .task").val(localStorage.getItem("hour-9"))
-// $("#")
-
-
-
-    //display current day on the page- using moment
-
-
-
-
-
-
-
-//     $(".saveBtn").on("click", function () {
-
-//         var time = moment().format("hh:mm A");
-//         var text = $(".textInput").val();
-
-//     localStorage.setItem(time, text) //pass in the 2 variables for time and text
-// });
-
