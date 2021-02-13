@@ -142,10 +142,39 @@ function colorChange() {
         nineEl.classList.add("red");
     }
     else if (currentTime < 11 && currentTime > 9) {
-        tenEl.classList.add("red")
+        tenEl.classList.add("red");
+        tenEl.classList.remove("ten");
+        elevenEl.classList.add("green");
+        elevenEl.classList.remove("eleven");
+        twelveEl.classList.add("green");
+        twelveEl.classList.remove("twelve");
+        oneEl.classList.add("green");
+        oneEl.classList.remove("one");
+        twoEl.classList.add("green");
+        twoEl.classList.remove("two");
+        threeEl.classList.add("green");
+        threeEl.classList.remove("three");
+        fourEl.classList.add("green");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
+
     }
     else if (currentTime < 12 && currentTime > 10) {
-        elevenEl.classList.add("red")
+        elevenEl.classList.add("red");
+        elevenEl.classList.remove("eleven");
+        twelveEl.classList.add("green");
+        twelveEl.classList.remove("twelve");
+        oneEl.classList.add("green");
+        oneEl.classList.remove("one");
+        twoEl.classList.add("green");
+        twoEl.classList.remove("two");
+        threeEl.classList.add("green");
+        threeEl.classList.remove("three");
+        fourEl.classList.add("green");
+        fourEl.classList.remove("four");
+        fiveEl.classList.add("green");
+        fiveEl.classList.remove("five");
     }
     else if (currentTime < 13 && currentTime > 11) {
         twelveEl.classList.add("red")

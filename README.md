@@ -4,7 +4,6 @@
 
 The Work-Day Scheduler is designed to create a nice layout for the day that updates in real time. The current hour will be displayed in red, past hours displayed in grey, and future hours displayed in green. The scheduler is broken down by the hour- begining at 9am and concluding at 5pm. Each hour has a textbox where the user can input information. All information is saved in local storage, so when the page is refreshed the data will stay.
 
-## Example of Application
 
 ## Technologies Used
 
